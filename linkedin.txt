@@ -31,3 +31,5 @@ qr-scanner
 
 🧪 Everything happens locally in the browser — nothing is stored or sent anywhere.
 This project was a great learning experience in security, QR technologies, and Chrome extension development. Would love to hear your thoughts!
+
+Git Repo: https://github.com/themuhammadahmad/code-vault
