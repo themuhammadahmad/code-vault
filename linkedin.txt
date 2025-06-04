@@ -1,0 +1,33 @@
+Just Launched My Own Chrome Extension – A Secure QR Communication Tool
+
+I'm excited to share something I've built from scratch — a Chrome Extension that lets users securely encode and decode messages using QR codes and a secret key.
+
+
+🧠 Idea:
+
+This is a personal idea and creation — designed to help people communicate secretly or store private information in a secure and portable way using QR codes.
+
+🔍How It Works:
+
+🔒Encode: Enter your message and a secret key → it encrypts the message and generates a QR code.
+🔓 Decode: Scan or upload a QR code + enter the secret key → it decrypts the message and displays the original text.
+
+
+🔐 Use Cases:
+
+Secret communication between friends.
+Offline storage of personal notes or passwords.
+Physical sharing of encrypted data (e.g., printing the QR).
+A fun and creative way to experiment with encryption.
+
+⚙️ Built Using:
+
+Framework: Plasmo 
+Libraries:
+jsonwebtoken
+qrcode
+qr-scanner
+
+
+🧪 Everything happens locally in the browser — nothing is stored or sent anywhere.
+This project was a great learning experience in security, QR technologies, and Chrome extension development. Would love to hear your thoughts!

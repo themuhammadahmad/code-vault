@@ -1,0 +1,190 @@
+*{padding: 0;margin: 0;box-sizing: border-box;font-family: monospace;transition: all .1s;}
+:root{
+    --primary-color: slateblue;
+    --secondary-color: greenyellow;
+    --third-color: white;
+    --fourth-color: #111;
+}
+/* Style the entire scrollbar */
+::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+  }
+  
+  /* Style the track (background of the scrollbar) */
+  ::-webkit-scrollbar-track {
+    background: #f0f0f0;
+    border-radius: 10px;
+  }
+  
+  /* Style the scrollbar thumb (draggable part) */
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color); /* Color of the thumb */
+    border-radius: 10px;
+    border: 2px solid #f0f0f0; /* Adds space around the thumb */
+  }
+
+  
+button{
+    cursor: pointer;
+}
+body{
+    /* background: var(--secondary-color); */
+    /* background-image: url('./assets/bg.webp'); */
+    background-size: cover;
+    background-color: slateblue;
+    /* animation: animate-bg 100s ease-in-out infinite; */
+}
+@keyframes animate-bg {
+    0%{
+        background-position: left ;
+    }
+    50%{
+        background-position: right;
+    }
+    100%{
+        background-position: left;
+    }
+}
+body{
+    min-height: 462px;
+}
+body *{
+    border-radius: 2px;
+}
+.btn-group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin: 20px auto;
+    border: 2px solid white;
+}
+.btn-group button{
+    border: none;
+    border-radius: 0px;
+    outline: none;
+    padding: 8px 14px;
+    font-size: 18px;
+    background: transparent;
+    color: white;
+}
+.container{
+    width: 350px;
+    /* min-height: 400px; */
+    display: flex;
+    align-items: center;
+}
+h2{
+    color: var(--third-color);
+    font-size: 25px;
+}
+.container > div{
+    min-width: 350px;
+    /* min-height: 400px;  */
+    padding: 20px;
+    max-height: 369px;
+    overflow-y: auto;
+}
+.btn-group button.active{
+    background: var(--third-color);
+    color: var(--primary-color);
+}
+#decode-code-tab, #encode-info-tab{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+}
+
+input, textarea{
+    border: none;
+    outline: none;
+    box-shadow:  0px 0px 2px var(--third-color);
+    width: 100%;
+    padding: 5px;
+    font-size: 18px;
+    background: transparent;
+    backdrop-filter: blur(5px);
+    color: var(--third-color);
+
+}
+*::placeholder{
+    color: var(--third-color);
+}
+.container button{
+    border: 2px solid white;
+    outline: none;
+    padding: 8px 5px;
+    width: 60%;
+    font-size: 18px;
+}
+.container button:hover{
+    background: var(--primary-color);
+    color: white;
+}
+.message-container{
+    width: 100%;
+    color: var(--third-color);
+    font-size: 18px;
+}
+.message-container p{
+    padding: 8px;
+    background: transparent;
+    border: 2px solid var(--third-color);
+    /* color: var(--primary-color); */
+    margin-top: 8px;
+}
+.container .copy-btn{
+    border: none;
+    display: block;
+    margin-left: auto;
+    font-size: 18px;
+    width: fit-content;
+    height: fit-content;
+    padding: 0px;
+    background:transparent;
+    color: white;
+}
+.container .copy-btn:hover{
+    box-shadow: 0px 0px 10px #aaa;
+}
+.copied{
+   color: var(--secondary-color);
+   opacity: 0;
+   animation: animate-cop .1s ease-in-out forwards;
+}
+.qr-code-container{
+     width: 100%;
+     color: white;
+     font-size: 18px;
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+     align-items: center;
+     justify-content: center;
+}
+p.error{
+    font-size: 18px;
+    text-align: center;
+    color: red;
+    padding: 5px;
+    background: white;
+}
+span.error{
+  font-size: 15px;
+  color: red;
+  background: white;
+  margin-top: 4px;
+  display: block;
+  width: fit-content;
+  padding: 2px;
+}
+@keyframes animate-cop{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
